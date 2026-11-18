@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-jdk-alpine
 WORKDIR /app
 
 # Copia todos os arquivos do projeto para dentro do container
-COPY ../../../Downloads ./
+COPY . .
 
 # Dá permissão de execução ao Maven Wrapper
 RUN chmod +x mvnw
